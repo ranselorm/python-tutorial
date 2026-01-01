@@ -39,6 +39,13 @@ set_example.add(6)  # Adding an element to the set
 print("Set example after adding an element:", set_example)
 set_example.remove(3)  # Removing an element from the set
 print("Set example after removing an element:", set_example)
-
 print(list(set_example))
+
+# Dictionary example
+dict_example = {'name': 'Alice', 'age': 30, 'city': 'New York'}
+print("Dictionary example:", dict_example)
+print("Keys in dictionary:", dict_example.keys())
+print("Values in dictionary:", dict_example.values())
+dict_example['age'] = 31  # Modifying a value in the dictionary
+print("Dictionary after modification:", dict_example)
 
