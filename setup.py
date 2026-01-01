@@ -10,7 +10,6 @@ import math
 # else:
 #     print("No name provided.")  
 
-
 # Function to calculate the hypotenuse of a right triangle
 # def two_numbers(height, width):
 #     return (height ** 2 + width ** 2) ** 0.5
