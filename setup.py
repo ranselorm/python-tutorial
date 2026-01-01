@@ -40,5 +40,5 @@ print("Set example after adding an element:", set_example)
 set_example.remove(3)  # Removing an element from the set
 print("Set example after removing an element:", set_example)
 
-
+print(list(set_example))
 
