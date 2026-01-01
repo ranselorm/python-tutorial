@@ -1,14 +1,14 @@
 import math
 
-# def greeting(name):
-#     print(f"Hello, {name}, have a nice day!")
+def greeting(name):
+    print(f"Hello, {name}, have a nice day!")
     
-# user_name = str(input("Enter your name: "))
+user_name = str(input("Enter your name: "))
 
-# if user_name:
-#     greeting(user_name)
-# else:
-#     print("No name provided.")  
+if user_name:
+    greeting(user_name)
+else:
+    print("No name provided.")  
 
 
 
