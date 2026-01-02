@@ -62,3 +62,9 @@ for key, value in dict_example.items():
 print("Sliced tuple (first 3 elements):", tuple_example[:3])
 print("Sliced list (last 2 elements):", list_example[-2:])
 
+
+
+# Exercise: Create a list and perform various operations
+numbers = range(1, 11)  # Create a range of numbers from 1 to 10
+print("Numbers from 1 to 10:", list(numbers))
+num_list = list(numbers)  # Convert range to list
