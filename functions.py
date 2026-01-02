@@ -9,7 +9,7 @@ print_5_times()
 
 
 # Exercise
-def shouter(str, num):
+def shouter(str = 'hello', num=2):
     if num > 10:
         print("You are too loud!")
     else:
@@ -17,5 +17,5 @@ def shouter(str, num):
             print(str.capitalize())
     return 'done'
 
-status = shouter("hello! ", 12)
+status = shouter()
 print("Shouter function status:", status)
