@@ -15,6 +15,7 @@ def shouter(str, num):
     else:
         for _ in range(num):
             print(str.capitalize())
-    return
+    return 'done'
 
-shouter("hello! ", 12)
+status = shouter("hello! ", 12)
+print("Shouter function status:", status)
