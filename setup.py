@@ -68,3 +68,6 @@ print("Sliced list (last 2 elements):", list_example[-2:])
 numbers = range(1, 11)  # Create a range of numbers from 1 to 10
 print("Numbers from 1 to 10:", list(numbers))
 num_list = list(numbers)  # Convert range to list
+
+new_list = num_list[7:0:-2]  # Slice the list from index 7 to 0 with a step of -2
+print("Sliced list (from index 7 to 0 with step -2):", new_list)
