@@ -49,3 +49,16 @@ print("Values in dictionary:", dict_example.values())
 dict_example['age'] = 31  # Modifying a value in the dictionary
 print("Dictionary after modification:", dict_example)
 
+
+# Looping through a list
+for item in list_example:
+    print("List item:", item)
+
+# Looping through a dictionary
+for key, value in dict_example.items():
+    print(f"Key: {key}, Value: {value}")
+
+# Slicing examples
+print("Sliced tuple (first 3 elements):", tuple_example[:3])
+print("Sliced list (last 2 elements):", list_example[-2:])
+
