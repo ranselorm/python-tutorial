@@ -17,5 +17,5 @@ def shouter(str = 'hello', num=2):
             print(str.capitalize())
     return 'done'
 
-status = shouter()
+status = shouter("hello! ", 12)
 print("Shouter function status:", status)
