@@ -37,9 +37,65 @@ mage2.attack(mage1)
 # print(f"After attack, Mage2's health: {mage2.health}") 
 # print(f"After attack, Mage1's health: {mage1.health}")
 
-print(f"After attack, Mage1's health: {mage1.health}") 
-print(f"After attack, Mage2's health: {mage2.health}")
-
-# print(f"Mage attacked! Target's health is now {target.health}.")
+# print(f"After attack, Mage1's health: {mage1.health}") 
+# print(f"After attack, Mage2's health: {mage2.health}")
 
 
+
+
+# Inheritance example
+class Human:
+    def __init__(self, health):
+        self.health = health
+
+    def attack(self):
+        print("attack from Human class")
+
+class Warrior(Human):
+    def __init__(self, health, defense):
+        super().__init__(health)
+        self.defense = defense
+
+class Barbarian(Human):
+    def __init__(self, health, damage):
+        super().__init__(health)
+        self.damage = damage
+
+        
+warrior = Warrior(100, 50)
+barbarian = Barbarian(150, 70)
+
+print(f"Warrior Health: {warrior.health}, Defense: {warrior.defense}")
+print(f"Barbarian Health: {barbarian.health}, Damage: {barbarian.damage}")
+
+
+# Exercise
+class Entity:
+    def attack(self):
+        print("Entity attack method")   
+        print(self.damage)
+
+    def __repr__(self):
+        return f"Monster with {self.health} hp"
+
+class Monster(Entity):
+    def __init__(self, health, damage):
+        self.health = health
+        self.damage = damage
+
+monster = Monster(200, 30)
+monster2 = Monster(250, 80)
+print(f"Monster Health: {monster.health}, Damage: {monster.damage}")
+print("Calling attack method from Monster instance:")
+
+monster.attack()
+monster2.attack()
+
+print(monster2)
+
+
+
+
+   
+
+    
